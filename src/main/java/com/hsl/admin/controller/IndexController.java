@@ -40,6 +40,7 @@ public class IndexController {
     @GetMapping("/acct")
     public Account getById(@RequestParam("id") Long id) {
         System.out.println(id);
+        System.out.println(1111);
         return accountService.getAcctByid(id);
     }
 
