@@ -39,7 +39,7 @@ public class IndexController {
     @ResponseBody
     @GetMapping("/acct")
     public Account getById(@RequestParam("id") Long id) {
-
+        System.out.println(id);
         return accountService.getAcctByid(id);
     }
 
